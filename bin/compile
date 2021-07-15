@@ -12,7 +12,6 @@ if [ "$npmrc" != "" ]; then
   echo "$npmrc"
 
   echo "DEBUG CAT"
-  echo "$(cat $build_dir/npmrc)"
-
+  echo "$(cat $build_dir/.npmrc)"
 	exit 0
 fi
