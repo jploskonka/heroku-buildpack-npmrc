@@ -15,6 +15,6 @@ if [ "$npmrc" != "" ]; then
   echo "$(cat $build_dir/.npmrc)"
   
   echo "npm whoami"
-  echo "$(npm whoami)
+  echo "$(npm whoami)"
 	exit 0
 fi
