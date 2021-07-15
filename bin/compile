@@ -7,5 +7,12 @@ npmrc="$(cat $ENV_DIR/NPMRC)"
 if [ "$npmrc" != "" ]; then
 	echo "-----> Using .npmrc from config var NPMRC"
 	echo "$npmrc" > "$build_dir/.npmrc"
+
+  echo "DEBUG"
+  echo "$npmrc"
+
+  echo "DEBUG CAT"
+  echo "$(cat $build_dir/npmrc)"
+
 	exit 0
 fi
