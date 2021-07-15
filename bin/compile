@@ -7,8 +7,6 @@ npmrc="$(cat $ENV_DIR/NPMRC)"
 if [ "$npmrc" != "" ]; then
 	echo "-----> Using .npmrc from config var NPMRC"
 	echo "$npmrc" > "$build_dir/.npmrc"
-	
-	npm install @tjekvik/fantastic-guide@0.1.17
 
   echo "DEBUG"
   echo "$npmrc"
